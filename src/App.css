@@ -1,57 +1,11 @@
-/* Reset some default styles */
-body,
-h1,
-p,
-button {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
 
-
-
-/* Style for the title */
-h1 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-/* Style for the advice container */
-.advice-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-/* Style for the advice text */
-.advice {
-  font-size: 18px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #555;
-}
-
-/* Style for the "Get Advice" button */
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
 body{
   background: #202733;
   min-height: 100vh;
   display: grid;
   place-items: center;
   padding-inline: 1.6rem;
+  overflow: hidden;
 }
 
 .advice-generator{
@@ -121,5 +75,5 @@ picture>img{
 }
 
 .advice-generator-btn:is(:hover)>img{
-  transform: rotate(135deg);
+  transform: rotate(180deg);
 }

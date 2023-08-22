@@ -16,12 +16,6 @@ function App() {
   }, []);
   return (
     <div className="advice-generator">
-      {/* <h1>Random Advice Generator</h1>
-      <div className="advice-container">
-        {advice && <p className="advice">{advice}</p>}
-        <button onClick={getAdvice}>Get Advice</button>
-      </div> */}
-
       <div className="advice-generator-output">
         <span className="advice-generator-advice-number">
           ADVICE #{adviceNo}
@@ -29,7 +23,7 @@ function App() {
         <q className="advice-generator-quote">{advice}</q>
 
         <picture className="advice-generator-divider">
-          <img src={divider} alt="div" style={{ width: "12rem" }} />
+          <img src={divider} alt="div" style={{ width: "10rem" }} />
         </picture>
       </div>
       <button onClick={getAdvice} className="advice-generator-btn">
