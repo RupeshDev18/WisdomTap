@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+/* Reset some default styles */
+body,
+h1,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* Style for the title */
+h1 {
+  margin-bottom: 20px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style for the advice container */
+.advice-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style for the advice text */
+.advice {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #555;
+}
+
+/* Style for the "Get Advice" button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+body{
+  background: #202733;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding-inline: 1.6rem;
+}
+
+.advice-generator{
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  max-width: 54rem;
+  display: grid;
+  grid: max-content 3.2rem / 1fr;
+}
+
+.advice-generator-output{
+  background: #313a48;
+  padding: 4rem 2.4rem 6.4rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2.4rem;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
 
-.App-link {
-  color: #61dafb;
+.advice-generator-advice-number{
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.345714rem;
+  color: #53ffaa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.advice-generator-quote{
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  letter-spacing: -0.0257143rem;
+  color: #cee3e9;
+}
+
+.advice-generator-divider{
+  display: flex;
+  width: 100%;
+}
+picture>img{
+  margin: auto;
+  width: 100%;
+}
+
+.advice-generator-btn{
+  width: 6.4rem;
+  height: 6.4rem;
+  background: #53ffaa;
+  border-radius: 50%;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  place-self: end center;
+  transition: box-shadow 250ms;
+  cursor: pointer;
+}
+
+.advice-generator-btn:is(:hover){
+  box-shadow: 0px 0px 20px #53ffaa;
+}
+
+.advice-generator-btn-img{
+  transition: transform 250ms;
+}
+
+.advice-generator-btn:is(:hover)>img{
+  transform: rotate(135deg);
 }
